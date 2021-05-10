@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 微軟正黑體;
+}
+body{
+    width: auto;
+}
+/*排列*/
+.root-body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/*關於我*/
+.about{
+    width:100%;
+    background-color:#DFDEDB;
+}
+.big {
+    position: relative;
+    top: 2%;
+    bottom: 2%;
+    width: 50%;
+    height: 50%;
+}
+.big-image {
+    transition: transform 1s ease;
+    width: 100%;
+    height: 100%;
+    padding:8%;
+}
+.big:hover .big-image, .big:focus .big-image {
+    transform: rotate(-7deg);
+}
+
+/*名言特效*/
+.container {
+  position:relative;
+  width: 11%;
+  background-color:#F0F38F;
+  writing-mode: vertical-lr;
+  z-index: 20;
+}
+.aboutme-word{
+  letter-spacing: 10px;
+  padding: 8%;
+  padding-top: 15%;
+  font-size: 65px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .0.5s ease;
+  background-color: lightgoldenrodyellow;
+}
+.container:hover .overlay{
+  opacity: 1;
+}
+.text{   
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding:8%;
+  padding-top: 11%;
+}
+
+/*基本資料*/
+.about table{
+    width: 39%;
+    position: relative;
+    border-collapse: collapse;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 5%;
+    letter-spacing: 4px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    padding-right: 50px;
+}
+
+.about table td{
+    padding: 20px;
+    transition: all .3s ease-out;
+}
+.about table td:hover{
+    color: white;
+    transform: rotate(-3deg);
+}
+.about table td:active{
+    transform: translateY(4px);
+}
+/*skill*/
+.skills{
+    width: 70%;
+    height: 13.5%;
+    background-color:#F0F38F;
+    margin-top: 100px;
+    transition: .2s ease;
+}
+
+.skills-text{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 6px;
+    padding-top: 60px;
+    text-align: right;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -webkit-animation-name: slidein1;
+    -moz-animation-name: slidein1;
+    
+}
+@-webkit-keyframes slidein1 {
+    from {
+      padding-left: 0;
+      width: 0%;
+    }
+
+    to {
+      padding-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @-moz-keyframes slidein1 {
+    from {
+      padding-left: 0;
+      width: 0%;
+    }
+ 
+    to {
+      padding-left: 0%;
+      width: 100%;
+    }
+  }
+  .skills-content{
+    margin-top: 80px;
+ }
+
+  .bar {
+    display: flex;
+    font-size: 25px;
+    width: 500px;
+    margin-top: 35px;
+    margin-left:32%;
+  }
+  
+  .barItem {
+    width: 130px;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .barBack {
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    border: #D3D3D3 solid 0px;
+    margin-left: 10px;
+    background-color: #D3D3D3;
+    overflow: hidden;
+  }
+  
+  .barIn {
+    height: 90%;
+    border-radius: 10px;
+    border: #e9ad52 solid 1px;
+    background: #e9ad52;
+    -webkit-animation: load 2.5s ease-in;
+  }
+  
+  @-webkit-keyframes load {
+    0% {
+      width: 0%;
+    }
+  
+    100% {}
+  }
+  /*school*/
+  .edu{
+      margin-top: 235px;
+      margin-left:19%;
+      font-size: 35px;
+      letter-spacing: 2px;
+      line-height: 100px;
+  }
+  .edu-name{
+    font-size: 35px;
+  }
+  .date{
+    position: relative;
+    font-size: 17px;
+  }
+  /*專案*/
+
+  .project{
+    width: 35%;
+    height: 85px;
+    background-color:#F0F38F;
+    margin-left: 65%;
+    margin-top: 50px;
+  }
+ .project-text{
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 6px;
+  text-align: left;
+  padding-top: 55px;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+    
+}
+@-webkit-keyframes slidein {
+    from {
+      padding-left: 100%;
+      width: 0%;
+    }
+
+    to {
+      padding-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @-moz-keyframes slidein {
+    from {
+      padding-left: 100%;
+      width: 0%;
+    }
+ 
+    to {
+      padding-left: 0%;
+      width: 100%;
+    }
+  }
+
+.crispy{
+  position: relative;
+  left: 30%;
+  top: 0;
+  width: 500px;
+  height: 450px;
+  margin-top: 10%;
+}
+
+.business{
+  font-size: 40px;
+  margin-top: 14%;
+  margin-left: 4.5%;
+}
+.business:hover{
+  font-size: 50px;
+}
+.business-text{
+  width: 68%;
+  position: relative;
+  font-size: 24px;
+  padding-top: 45px;
+  left: 7%;
+  line-height: 60px;
+}
+
+
+
+.web{
+  position: relative;
+  left: 30%;
+  top: 0;
+  width: 500px;
+  height: 450px;
+  margin-top: 10%;
+}
+.tap{
+  font-size: 40px;
+  margin-top: 14%;
+  margin-left: 4.5%;
+}
+.tap:hover{
+  font-size: 50px;
+}
+.tap-text{
+  width: 68%;
+  position: relative;
+  font-size: 24px;
+  padding-top: 45px;
+  left: 7%;
+  line-height: 60px;
+}
+
+/*社團、工作經驗*/
+.gray{
+    width:82%;
+    height:480px;
+    background-color:#DFDEDB;
+    margin-top: 150px;
+    margin-left: 10%;
+    position: absolute;
+    z-index: +0;
+}
+.actyellow{
+  width: 130px;
+  height: 500px;
+  background-color:#F0F38F;
+  z-index: +2;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+.actyellow2{
+  width: 130px;
+  height: 500px;
+  background-color:#F0F38F;
+  z-index: +2;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 100px;
+}
+.container2 {
+    position: relative;
+    width: 550px;
+    height: 380px;
+    margin-top: 210px;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 550px;
+    height: 380px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    z-index: +5;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .container2:hover .image {
+    opacity: 0.3;
+  }
+  .container2:hover .middle {
+    opacity: 1;
+  }
+  .container-text {
+    background-color: rgba(90, 90, 90, 0.678);
+    color: white;
+    font-size: px;
+    padding: 16px 32px;
+  }
+
+
+
+
+
+
+
+
+
